@@ -1,2 +1,5 @@
 # 1. list
-ddd
+## 리스트 종류
+# 2. tree
+
+# 3. graph
