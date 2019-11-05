@@ -83,29 +83,54 @@ binary search tree
 
 typedef struct Tree {
 
-    struct Tree *l, *r;
+struct Tree *l, *r;
     
-    int d;
+int d;
     
 } T;
 
 void print(T* p){
+
    printf("%d\n", p->d);
+   
    if(p->l) print(p->l);
-   if(p->r) print(p->r);    
+   
+   if(p->r) print(p->r);  
+   
 }
+
 T* mem(){
+
  T* p=(T*)malloc(sizeof(T));
+ 
  p->l=p->r=NULL;
+ 
  return(p);
+ 
 }
+
 int main(void){
-    T *r, *r1, *r2, *l1;
-    l1= (T*)mem(); l1->d=3; 
-    r2= (T*)mem(); r2->d=8; 
-    r1= (T*)mem(); r1->d=7; r1->r=r2;
-    r= (T*)mem(); r->d=5; r->l=l1;  r->r=r1;
-    print(r);
+
+   T *r, *r1, *r2, *l1;
+    
+   l1= (T*)mem(); l1->d=3; 
+    
+   r2= (T*)mem(); r2->d=8; 
+   
+   r1= (T*)mem(); r1->d=7; r1->r=r2;
+   
+   r= (T*)mem(); r->d=5; r->l=l1;  r->r=r1;
+   
+   print(r);
+    
 }
 
 # 3. graph
+## 설명
+트리와 다르게 연결 방향,유무,갯수가 자유롭고 계층과 부모 자식 관계의 구분이 없다.
+
+# 4. 소감
+솔직히 처음 들었을 때는 정말 이해하기가 어려웠지만 교수님이 보여주신 유튜브와 수업을 참고하고 충희 같은 친구들에게 조언을 구해 이해하려 노력하고
+
+후에 알게 된 것을 다른 친구들에게도 설명해 주면서 더 잘 이해할 수 있게 되었습니다.
+
