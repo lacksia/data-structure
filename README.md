@@ -7,8 +7,8 @@ doubly linked list
 circular linked list
 
 ## 설명
-데이터가 들어올 때마가 메모리를 각각 할당
-메모리 할당 효율이 높음
+데이터가 들어올 때마가 메모리를 각각 할당하는 형식 떄문에 메모리 할당 효율이 높음
+
 ## 예제 코드
 #include <stdio.h>
 
